@@ -1,6 +1,6 @@
 package git_ex_2_1;
 
-public class Home {
+public class Home implements Building{
 
     private String street;
 
@@ -8,4 +8,8 @@ public class Home {
         this.street = street;
     }
 
+    @Override
+    public void build() {
+        System.out.println("Home builded");
+    }
 }
